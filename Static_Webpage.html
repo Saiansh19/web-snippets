@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars by Aston Martin</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+        video#background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            color: whitesmoke;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: 2rem auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .car-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: row;
+        }
+        .car-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .car-card img {
+            width: 50%;
+            height: auto;
+        }
+        .car-info {
+            padding: 1rem;
+            text-align: left;
+            width: 50%;
+        }
+        .car-info h2 {
+            margin: 0.5rem 0;
+            font-size: 1.5rem;
+        }
+        .car-info p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+<video id="background-video" autoplay loop muted>
+        <source src="Aston Martin Valiant ｜ For Your Sins (1) (online-video-cutter.com).mp4" type="video/mp4">
+    </video>
+<header>
+    <h1>Aston Martin Cars</h1>
+    <p>Explore the luxury and performance of Aston Martin's iconic models</p>
+</header>
+
+<div class="container">
+    <div class="car-card">
+        <img src="Aston_Martin_Valhalla_04.jpg" alt="Aston Martin Valhalla">
+        <div class="car-info">
+            <h2>Aston Martin Valhalla</h2>
+            <p>A perfect blend of power and elegance.</p>
+            <p> Fusing the performance-driven methodologies and technologies of Formula 1® with spectacular design and scintillating driving dynamics, 
+            Valhalla is a supercar of extraordinary scope. <br> <br>Valhalla also debuts a fresh design language. Extreme supercar performance expressed with fresh form and proportion, it bears the unmistakable Aston Martin hallmarks of flawless, uncorrupted lines and combines them with innovative high-downforce active aerodynamics.<br>
+            <br>This is Aston Martin’s first series production mid-engined supercar and first plug-in hybrid, delivering the marques first production vehicle with dedicated EV range capability. It is also the first model to use the bespoke 4.0-litre twin-turbo flat-plane crank V8 engine – the highest performing V8 engine ever fitted to an Aston Martin</p>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <img src="Aston_Martin_Valiant_01.jpg" alt="Aston Martin Valiant">
+        <div class="car-info">
+            <h2>Aston Martin Valiant</h2>
+            <p>Unmistakable presence and thrilling performance.</p>
+            <p>Aston Martin is proud to announce Valiant; an ultra-exclusive track-focused, road-legal special edition of extraordinary rarity, presence and potency and is the latest in a long line of extraordinary projects expertly handled by in-house bespoke division, Q by Aston Martin. <br> <br> Powered by a 745PS Twin Turbo 5.2-litre V12 mated to a six-speed manual transmission, Valiant embodies Aston Martin’s commitment to building pure driver’s cars. Production is strictly limited to just 38 cars globally with all fully allocated.
+            <br> <br>Valiant was originally conceived from a personal commission from Aston Martin Aramco Formula One® Team driver, Fernando Alonso for a lightweight, more extreme, race car inspired version of the spectacular, Aston Martin Valour.</p>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <img src="2020-aston-dbs-superleggera-volante-103-1562086380.jpg" alt="Aston Martin DBS Superleggera">
+        <div class="car-info">
+            <h2>Aston Martin DBS Superleggera Volante</h2>
+            <p>Supreme luxury and extraordinary speed.</p>
+            <p>Aston Martin has opened the roof on its ultimate open-top driving experience; the new DBS Superleggera Volante. Combining three iconic nameplates in one flagship model, the new DBS Superleggera Volante delivers all the evocative talent of the British marque’s critically-acclaimed Super GT flagship – the magnificent DBS Superleggera – and blends it with class-leading convertible technology.
+            <br> <br> Powered by Aston Martin’s own 5.2-litre twin-turbo V12, producing 715BHP 900Nm of torque, and with a top speed of 211mph, the DBS Superleggera Volante boasts ferocious acceleration. While covering 0-62mph in just 3.6 seconds and 0-100mph in 6.7 seconds.
+            <br> <br> Volante is a name that can only be attributed to convertible cars bearing the iconic Aston Martin wings badge, and thus the defining feature of any Volante is its roof. An advanced fabric system allows for an innovative and beautiful formed flowing roof line. Incorporating eight layers of insulation materials and acoustically enhancing materials, the canopy greatly improves the comfort of the interior cabin for all occupants when up, but allows a true orchestra of sound to pour into the cabin when retracted.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

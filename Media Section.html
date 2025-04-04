@@ -1,0 +1,33 @@
+<section id="media">
+    <h1>Media Gallery</h1>
+    <div class="media-container">
+        <div>
+            <h2>My Favorite Place</h2>
+            <img src="travel_1.jpg" alt="Favourite Place" style="width: 50%; border-radius: 8px;">
+        </div>
+        <div>
+            <h2>My Favorite Music</h2>
+            <audio controls>
+                <source src="hobbies-audio.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div>
+            <h2>My Travel Vlog</h2>
+            <video width="100%" controls>
+                <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+
+<style>
+    .media-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .media-container div {
+        flex: 1;
+        text-align: center;
+    }
+</style>
